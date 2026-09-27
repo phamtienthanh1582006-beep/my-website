@@ -3,60 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trang Web Của Tôi</title>
+    <title>Phạm Tiến Thành - Giới Thiệu Bản Thân</title>
     <style>
-        /* CSS: Phần trang trí giao diện */
+        :root {
+            --primary-blue: #1e40af;
+            --light-blue: #e0f2fe;
+            --accent-blue: #0284c7;
+            --text-color: #111111;
+            --bg-gradient: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 50%, #93c5fd 100%);
+            --card-bg: #ffffff;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #74b9ff, #dfe6e9);
-            margin: 0;
-            padding: 0;
+            background: var(--bg-gradient);
+            color: var(--text-color);
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh;
+            padding: 20px;
         }
-        .card {
-            background-color: white;
-            padding: 40px;
-            border-radius: 12px;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            max-width: 400px;
+        .container {
             width: 100%;
+            max-width: 700px;
+            background: var(--card-bg);
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+            padding: 40px;
+            text-align: center;
         }
-        h1 {
-            color: #2d3436;
-            margin-bottom: 10px;
+        h1 { color: var(--primary-blue); margin-bottom: 10px; font-size: 32px; }
+        .subtitle { font-size: 18px; color: #334155; margin-bottom: 25px; font-weight: 600; }
+        .info-box {
+            background: var(--light-blue);
+            padding: 20px;
+            border-radius: 12px;
+            text-align: left;
+            margin-bottom: 30px;
+            border-left: 5px solid var(--accent-blue);
         }
-        p {
-            color: #636e72;
-            font-size: 16px;
-            margin-bottom: 25px;
+        .info-box p { margin-bottom: 10px; font-size: 16px; color: var(--text-color); }
+        .pagination {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
         }
+        .page-indicator { font-weight: bold; color: #64748b; }
         .btn {
-            background-color: #0984e3;
+            background-color: var(--primary-blue);
             color: white;
             padding: 12px 25px;
             text-decoration: none;
-            border-radius: 6px;
+            border-radius: 8px;
             font-weight: bold;
-            display: inline-block;
             transition: background 0.3s;
         }
-        .btn:hover {
-            background-color: #74b9ff;
-        }
+        .btn:hover { background-color: var(--accent-blue); }
     </style>
 </head>
 <body>
+    <div class="container">
+        <h1>Phạm Tiến Thành</h1>
+        <p class="subtitle">Sinh viên Công nghệ Thông tin & Gia Sư Chuyên Nghiệp</p>
+        
+        <div class="info-box">
+            <p><strong>📅 Ngày sinh:</strong> 15/08/2006</p>
+            <p><strong>📞 Số điện thoại:</strong> 0352124270</p>
+            <p><strong>✉️ Email:</strong> phamtienthanh1582006@gmail.com</p>
+            <p><strong>📍 Địa chỉ:</strong> 86 Nguyễn Văn Trỗi, Mộ Lao, Hà Đông</p>
+        </div>
 
-    <!-- HTML: Phần nội dung trang web -->
-    <div class="card">
-        <h1>Xin chào! 👋</h1>
-        <p>Tôi đang tự tay thiết kế trang web đầu tiên của mình trên VS Code.</p>
-        <a href="#" class="btn">Tìm hiểu thêm</a>
+        <div class="pagination">
+            <span class="page-indicator">Trang 1 / 3</span>
+            <a href="education.html" class="btn">Tiếp theo: Học vấn & Thành tích ➡️</a>
+        </div>
     </div>
-
 </body>
 </html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Học Vấn & Thành Tích - Phạm Tiến Thành</title>
+    <style>
+        :root {
+            --primary-blue: #1e40af;
+            --light-blue: #e0f2fe;
+            --accent-blue: #0284c7;
+            --text-color: #111111;
+            --bg-gradient: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 50%, #93c5fd 100%);
+            --card-bg: #ffffff;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: var(--bg-gradient);
+            color: var(--text-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            width: 100%;
+            max-width: 700px;
+            background: var(--card-bg);
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+            padding: 40px;
+        }
+        h2 { color: var(--primary-blue); margin-bottom: 20px; font-size: 24px; border-bottom: 2px solid var(--light-blue); padding-bottom: 10px; }
+        .section { margin-bottom: 25px; }
+        .education-box {
+            background: var(--light-blue);
+            padding: 15px 20px;
+            border-radius: 10px;
+            border-left: 4px solid var(--accent-blue);
+            margin-bottom: 15px;
+        }
+        .education-box p { font-weight: 600; color: var(--primary-blue); }
+        .education-box span { color: var(--text-color); }
+        ul { list-style-type: none; padding-left: 0; }
+        ul li { position: relative; padding-left: 20px; margin-bottom: 10px; }
+        ul li::before { content: "•"; color: var(--accent-blue); font-weight: bold; font-size: 18px; position: absolute; left: 0; top: -1px; }
+        .pagination {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 30px;
+        }
+        .page-indicator { font-weight: bold; color: #64748b; }
+        .btn {
+            background-color: var(--primary-blue);
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        .btn:hover { background-color: var(--accent-blue); }
+        .btn-secondary { background-color: #64748b; }
+        .btn-secondary:hover { background-color: #475569; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="section">
+            <h2>🎓 Trình Độ Học Vấn</h2>
+            <div class="education-box">
+                <p>Học viện Công nghệ Bưu chính Viễn thông (PTIT)</p>
+                <span>Sinh viên năm 2 – Chuyên ngành: Công nghệ thông tin</span>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>🏆 Thành Tích Đạt Được</h2>
+            <ul>
+                <li>Thủ khoa đầu vào trường cấp 3 (Trường THPT Quang Trung).</li>
+                <li>Điểm thi THPT Quốc gia ấn tượng: <strong>Toán 8.4 | Văn 9.0 | Lý 9.0 | Hóa 9.5</strong>.</li>
+                <li>Đạt học bổng đầu vào năm 2024 khóa D24 tại Học viện Công nghệ Bưu chính Viễn thông.</li>
+            </ul>
+        </div>
+
+        <div class="pagination">
+            <a href="index.html" class="btn btn-secondary">⬅️ Quay lại</a>
+            <span class="page-indicator">Trang 2 / 3</span>
+            <a href="skills.html" class="btn">Tiếp theo: Kỹ năng ➡️</a>
+        </div>
+    </div>
+</body>
+</html>

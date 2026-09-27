@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kỹ Năng & Mục Tiêu - Phạm Tiến Thành</title>
+    <style>
+        :root {
+            --primary-blue: #1e40af;
+            --light-blue: #e0f2fe;
+            --accent-blue: #0284c7;
+            --text-color: #111111;
+            --bg-gradient: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 50%, #93c5fd 100%);
+            --card-bg: #ffffff;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: var(--bg-gradient);
+            color: var(--text-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            width: 100%;
+            max-width: 700px;
+            background: var(--card-bg);
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+            padding: 40px;
+        }
+        h2 { color: var(--primary-blue); margin-bottom: 20px; font-size: 24px; border-bottom: 2px solid var(--light-blue); padding-bottom: 10px; }
+        .section { margin-bottom: 25px; }
+        ul { list-style-type: none; padding-left: 0; }
+        ul li { position: relative; padding-left: 20px; margin-bottom: 10px; }
+        ul li::before { content: "•"; color: var(--accent-blue); font-weight: bold; font-size: 18px; position: absolute; left: 0; top: -1px; }
+        .pagination {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 30px;
+        }
+        .page-indicator { font-weight: bold; color: #64748b; }
+        .btn {
+            background-color: var(--primary-blue);
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        .btn:hover { background-color: var(--accent-blue); }
+        .btn-secondary { background-color: #64748b; }
+        .btn-secondary:hover { background-color: #475569; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="section">
+            <h2>🎯 Mục Tiêu Nghề Nghiệp</h2>
+            <ul>
+                <li>Mong muốn trở thành gia sư giúp học sinh nắm vững kiến thức và đạt kết quả học tập cao.</li>
+                <li>Rèn luyện kỹ năng giảng dạy, truyền đạt và quản lý thời gian hiệu quả.</li>
+                <li>Tích lũy kinh nghiệm thực tế để phục vụ định hướng nghề nghiệp trong tương lai.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>⚡ Kỹ Năng Nổi Bật</h2>
+            <ul>
+                <li>Kỹ năng truyền đạt dễ hiểu, gần gũi với học sinh.</li>
+                <li>Kiên nhẫn, tận tâm và biết lắng nghe người học.</li>
+                <li>Quản lý thời gian biểu và kế hoạch học tập khoa học.</li>
+                <li>Sành sỏi các công cụ hỗ trợ học tập trực tuyến (Zoom, Google Meet...).</li>
+            </ul>
+        </div>
+
+        <div class="pagination">
+            <a href="education.html" class="btn btn-secondary">⬅️ Trang trước</a>
+            <span class="page-indicator">Trang 3 / 3</span>
+            <a href="index.html" class="btn">🔄 Về trang chủ</a>
+        </div>
+    </div>
+</body>
+</html>
